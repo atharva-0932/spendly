@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     {% block head %}{% endblock %}
+    <script>(function(){var t=localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t);})();</script>
 </head>
 <body>
 
@@ -20,6 +21,7 @@
             </a>
             <div class="nav-links">
                 <a href="{{ url_for('login') }}">Sign in</a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"></button>
                 <a href="{{ url_for('register') }}" class="nav-cta">Get started</a>
             </div>
         </div>
