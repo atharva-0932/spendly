@@ -214,7 +214,7 @@
 .bmock-bar-indigo { background: #6b6bbf; }
 
 /* ------------------------------------------------------------------ */
-/* Dark mode overrides for hardcoded colours                          */
+/* Theme overrides for hardcoded colours in the mockup               */
 /* ------------------------------------------------------------------ */
 
 [data-theme="dark"] .bmock {
@@ -243,6 +243,24 @@
 [data-theme="dark"] .hero-pill {
     border-color: #2d4f38;
 }
+
+[data-theme="ocean"] .bmock { background: #d8e8f4; }
+[data-theme="ocean"] .bmock-stat { background: #ffffff; border-color: #b8d0e8; }
+[data-theme="ocean"] .bmock-bars { background: #ffffff; border-color: #b8d0e8; }
+[data-theme="ocean"] .bmock-bar-track { background: #c8dced; }
+[data-theme="ocean"] .hero-pill { border-color: #9ab8dc; }
+
+[data-theme="sunset"] .bmock { background: #f0dfc8; }
+[data-theme="sunset"] .bmock-stat { background: #ffffff; border-color: #dcc4a8; }
+[data-theme="sunset"] .bmock-bars { background: #ffffff; border-color: #dcc4a8; }
+[data-theme="sunset"] .bmock-bar-track { background: #e8d4bc; }
+[data-theme="sunset"] .hero-pill { border-color: #e0a880; }
+
+[data-theme="violet"] .bmock { background: #e0d4f4; }
+[data-theme="violet"] .bmock-stat { background: #ffffff; border-color: #cdb8e8; }
+[data-theme="violet"] .bmock-bars { background: #ffffff; border-color: #cdb8e8; }
+[data-theme="violet"] .bmock-bar-track { background: #d8caf0; }
+[data-theme="violet"] .hero-pill { border-color: #b898d8; }
 
 /* ------------------------------------------------------------------ */
 /* Responsive                                                          */

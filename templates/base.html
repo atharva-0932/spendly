@@ -21,7 +21,16 @@
             </a>
             <div class="nav-links">
                 <a href="{{ url_for('login') }}">Sign in</a>
-                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"></button>
+                <div class="theme-picker" id="themePicker">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Change theme" title="Change theme">◑</button>
+                    <div class="theme-dropdown" id="themeDropdown">
+                        <button class="theme-opt" data-theme="light"><span class="theme-dot" style="background:#1a472a"></span>Light</button>
+                        <button class="theme-opt" data-theme="dark"><span class="theme-dot" style="background:#4fa368;border-color:rgba(255,255,255,0.15)"></span>Dark</button>
+                        <button class="theme-opt" data-theme="ocean"><span class="theme-dot" style="background:#1a5cad"></span>Ocean</button>
+                        <button class="theme-opt" data-theme="sunset"><span class="theme-dot" style="background:#bf4a15"></span>Sunset</button>
+                        <button class="theme-opt" data-theme="violet"><span class="theme-dot" style="background:#6b2fa0"></span>Violet</button>
+                    </div>
+                </div>
                 <a href="{{ url_for('register') }}" class="nav-cta">Get started</a>
             </div>
         </div>
