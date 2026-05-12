@@ -76,18 +76,21 @@
 
 .btn-hero {
     display: inline-block;
-    background: var(--ink);
-    color: #ffffff;
+    background: var(--btn-solid-bg);
+    color: var(--btn-solid-fg);
     padding: 0.72rem 1.6rem;
     border-radius: var(--radius-sm);
     font-family: var(--font-body);
     font-size: 0.95rem;
     font-weight: 600;
     text-decoration: none;
-    transition: background 0.2s;
+    transition: background 0.2s, color 0.2s;
 }
 
-.btn-hero:hover { background: var(--accent); }
+.btn-hero:hover {
+    background: var(--btn-solid-hover-bg);
+    color: var(--btn-solid-hover-fg);
+}
 
 /* ------------------------------------------------------------------ */
 /* Browser mockup                                                      */
